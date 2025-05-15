@@ -20,7 +20,7 @@ Focus: Add tools for analyzing and optimizing Docker images
 - ✅ Docker Compose Generator
 - ✅ Container Runtime Analyzer
 
-## 🚀 Sprint 3: Configuration & Generation Tools (Development)
+## 🚀 Sprint 3: Configuration & Generation Tools (Completed)
 
 Focus: Help users create and configure Docker resources
 
@@ -39,11 +39,11 @@ Focus: Help users create and configure Docker resources
   - Provide actionable recommendations
   - Include explanations for educational purposes
 
-## 🚀 Sprint 4: Comparison & Architecture Tools
+## 🚀 Sprint 4: Comparison & Architecture Tools (In Progress)
 
 Focus: Advanced analysis for complex Docker deployments
 
-- ⬜ Image Comparison Tool
+- ✅ Image Comparison Tool
   - Compare two Docker images and highlight differences
   - Analyze version changes
   - Identify potential breaking changes
