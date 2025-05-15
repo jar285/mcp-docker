@@ -20,16 +20,16 @@ Focus: Add tools for analyzing and optimizing Docker images
 - ✅ Docker Compose Generator
 - ✅ Container Runtime Analyzer
 
-## 🚀 Sprint 3: Configuration & Generation Tools (Next)
+## 🚀 Sprint 3: Configuration & Generation Tools (Development)
 
 Focus: Help users create and configure Docker resources
 
-- ⬜ Dockerfile Generator
+- ✅ Dockerfile Generator
   - Generate Dockerfiles based on application requirements
   - Support multiple application types (Node.js, Python, Java, etc.)
   - Include best practices automatically
 
-- ⬜ Environment Variable Analyzer
+- ✅ Environment Variable Analyzer
   - Identify and explain environment variables used by images
   - Suggest common configurations
   - Provide security recommendations for sensitive variables
