@@ -33,7 +33,7 @@ Docker Explorer is a powerful Model Context Protocol (MCP) server that provides 
 ### Prerequisites
 
 - Python 3.10 or higher
-- [MCP Python SDK](https://github.com/anthropics/anthropic-mcp)
+- [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
 - Required Python packages: `requests`, `pydantic`
 
 ### Setup
