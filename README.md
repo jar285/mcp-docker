@@ -28,6 +28,7 @@ Docker Explorer is a powerful Model Context Protocol (MCP) server that provides 
 - **📄 Docker Compose Generator**: Generate docker-compose.yml files for your applications
 - **📊 Container Runtime Analyzer**: Get insights about container runtime behavior and resource usage
 - **🔍 Image Comparison Tool**: Compare two Docker images and highlight their differences
+- **📜 Dockerfile Generator**: Create Dockerfiles from natural language application descriptions
 
 ## 🚀 Installation
 
@@ -261,6 +262,15 @@ def my_new_tool(
   - `image1` (string): First Docker image to compare (e.g., 'nginx:1.21' or 'user/repo:tag')
   - `image2` (string): Second Docker image to compare (e.g., 'nginx:1.22' or 'user/repo:tag')
 - **Returns**: Detailed comparison report highlighting differences in size, layers, configuration, and compatibility
+
+#### `generate_dockerfile`
+- **Description**: Generate a Dockerfile based on application requirements described in natural language
+- **Parameters**:
+  - `app_description` (string): Description of the application to containerize (e.g., 'Python Flask web app with Redis')
+  - `app_type` (string, default="web"): Application type (web, api, database, worker, static)
+  - `base_image` (string, default=""): Optional base image to use (e.g., 'python:3.9-alpine')
+  - `include_comments` (boolean, default=true): Whether to include explanatory comments in the Dockerfile
+- **Returns**: Generated Dockerfile with usage instructions
 
 ## 🔒 Security Considerations
 
