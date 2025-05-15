@@ -27,6 +27,7 @@ Docker Explorer is a powerful Model Context Protocol (MCP) server that provides 
 - **📦 Image Size Optimizer**: Get recommendations for reducing Docker image size
 - **📄 Docker Compose Generator**: Generate docker-compose.yml files for your applications
 - **📊 Container Runtime Analyzer**: Get insights about container runtime behavior and resource usage
+- **🔍 Image Comparison Tool**: Compare two Docker images and highlight their differences
 
 ## 🚀 Installation
 
@@ -253,6 +254,13 @@ def my_new_tool(
   - `tag` (string, default="latest"): Tag of the Docker image
   - `app_type` (string, default="web"): Application type (web, database, cache, api, batch)
 - **Returns**: Runtime analysis with resource usage predictions and recommendations
+
+#### `compare_images`
+- **Description**: Compare two Docker images and highlight the differences
+- **Parameters**:
+  - `image1` (string): First Docker image to compare (e.g., 'nginx:1.21' or 'user/repo:tag')
+  - `image2` (string): Second Docker image to compare (e.g., 'nginx:1.22' or 'user/repo:tag')
+- **Returns**: Detailed comparison report highlighting differences in size, layers, configuration, and compatibility
 
 ## 🔒 Security Considerations
 

@@ -199,7 +199,61 @@ What are the runtime characteristics of jar285/drupal as a web application?
 **Expected Response:**
 Claude will provide an analysis of how the container might behave at runtime, including resource usage predictions and orchestration recommendations.
 
+### 8. Image Comparison Tool
+
+**Example Query:**
+```
+Compare nginx:1.21 and nginx:1.22 images
+```
+or
+```
+What are the differences between jar285/drupal:latest and jar285/drupal:9.4?
+```
+
+**Expected Response:**
+Claude will provide a detailed comparison of the two Docker images, highlighting differences in size, layers, configuration, and compatibility.
+
 **Sample Output:**
+```
+# Comparison: nginx:1.21 vs nginx:1.22
+
+Comparing different versions of the same image: **library/nginx**
+
+## Size Comparison
+
+- **nginx:1.21**: ~150MB
+- **nginx:1.22**: ~180MB
+
+**nginx:1.22** is larger than **nginx:1.21**
+
+## Layer Comparison
+
+- **nginx:1.21**: 5 layers
+- **nginx:1.22**: 6 layers
+
+**nginx:1.22** has 1 more layers than **nginx:1.21**
+
+## Configuration Differences
+
+### Environment Variables
+
+**Added in nginx:1.22**:
+- `NGINX_VERSION=1.22.1`
+
+## Compatibility Analysis
+
+✅ **Architecture compatibility**: Both images use the same architecture
+✅ **OS compatibility**: Both images use the same operating system
+
+## Migration Recommendations
+
+- **Storage Impact**: The newer version requires more storage space
+- **Build Impact**: Different number of layers may affect build and pull times
+- **Environment Setup**: New environment variables need to be configured
+- **Testing**: Test your application thoroughly with the new image before deploying to production
+```
+
+**Sample Output for Container Runtime Analysis:**
 ```
 ## Runtime Analysis for library/mysql:5.7
 
