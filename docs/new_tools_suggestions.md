@@ -1,59 +1,123 @@
 # Potential New Tools for Docker Explorer
----------------------------------------
 
-1.  Security Scanner Tool
+Below is a curated list of proposed AI-powered utilities to enhance Docker Explorer’s capabilities. Each entry includes its purpose, value proposition, and current implementation status.
 
-    -   What it does: Analyzes Docker images for known vulnerabilities and security issues
-    -   Why add it: Security is a critical concern for container deployments. This tool would demonstrate how AI can help identify potential security risks in Docker images before deployment, making it a valuable addition for DevOps teams.
-    [x] 
-2.  Image Size Optimizer
+---
 
-    -   What it does: Analyzes a Docker image and suggests ways to reduce its size
-    -   Why add it: Container optimization is important for performance and resource efficiency. This tool would showcase practical recommendations for reducing image size, which is a common challenge in container development.
-    [x] 
-3.  Docker Compose Generator
+## 1. Security Scanner Tool
+- **What it does**  
+  Analyzes Docker images for known vulnerabilities and security issues.
+- **Why add it**  
+  Security is critical for container deployments. This tool helps DevOps teams catch potential risks before deployment.
+- **Status**  
+  - [x] Proposed  
+  - [x] In Development  
+  - [x] Completed  
 
-    -   What it does: Generates a docker-compose.yml file based on an image or repository
-    -   Why add it: Many Docker deployments use Docker Compose for multi-container applications. This tool would demonstrate how AI can help automate the creation of configuration files, saving developers time.
-    - [x] 
-4.  Container Runtime Analyzer
+---
 
-    -   What it does: Provides insights about how a container might behave at runtime
-    -   Why add it: Understanding runtime behavior is crucial for proper container orchestration. This tool would show how AI can predict resource usage, potential issues, and best practices for running containers.
-    - [x] 
+## 2. Image Size Optimizer
+- **What it does**  
+  Scans a Docker image and suggests ways to reduce its final size.
+- **Why add it**  
+  Smaller images improve performance and resource efficiency—critical in CI/CD pipelines and limited-resource environments.
+- **Status**  
+  - [x] Proposed  
+  - [x] In Development  
+  - [x] Completed  
 
-5.  Image Comparison Tool
+---
 
-    -   What it does: Compares two Docker images and highlights the differences
-    -   Why add it: Version comparison is important for tracking changes and understanding updates. This tool would demonstrate how AI can help identify what changed between versions of an image.
-    - []
+## 3. Docker Compose Generator
+- **What it does**  
+  Generates a `docker-compose.yml` based on an existing image or repository structure.
+- **Why add it**  
+  Automates multi-container setup, saving developers time creating and maintaining compose files.
+- **Status**  
+  - [x] Proposed  
+  - [x] In Development  
+  - [x] Completed  
 
-6.  Dockerfile Generator
+---
 
-    -   What it does: Generates a Dockerfile based on application requirements described in natural language
-    -   Why add it: Creating Dockerfiles from scratch can be challenging. This tool would showcase how AI can help developers quickly bootstrap their containerization process.
-    - []
+## 4. Container Runtime Analyzer
+- **What it does**  
+  Predicts container runtime behavior—resource usage, potential bottlenecks, and best-practice warnings.
+- **Why add it**  
+  Provides insight for orchestration and performance tuning, helping avoid surprises in production.
+- **Status**  
+  - [x] Proposed  
+  - [x] In Development  
+  - [x] Completed  
 
-7.  Best Practices Analyzer
+---
 
-    -   What it does: Analyzes a Dockerfile or Docker Hub repository against industry best practices
-    -   Why add it: Following best practices is important for maintainable and secure containers. This tool would demonstrate how AI can provide educational guidance on container best practices.
-    - []
+## 5. Image Comparison Tool
+- **What it does**  
+  Compares two Docker images and highlights added, removed, or modified layers.
+- **Why add it**  
+  Facilitates version tracking and change auditing for image evolution.
+- **Status**  
+  - [x] Proposed  
+  - [x] In Development  
+  - [x] Completed  
 
-8.  Environment Variable Analyzer
+---
 
-    -   What it does: Identifies and explains environment variables used by a Docker image
-    -   Why add it: Configuration through environment variables is a common pattern in containerization. This tool would help users understand how to properly configure containers.
-    - []
+## 6. Dockerfile Generator
+- **What it does**  
+  Generates a starter `Dockerfile` based on natural-language description of application requirements.
+- **Why add it**  
+  Lowers the barrier for containerizing applications by auto-bootstrapping best-practice Dockerfiles.
+- **Status**  
+  - [x] Proposed  
+  - [x] In Development  
+  - [ ] Completed  
 
-9.  Multi-Architecture Support Analyzer
+---
 
-    -   What it does: Analyzes an image's support for different CPU architectures (ARM, x86, etc.)
-    -   Why add it: With the rise of ARM-based systems like Apple Silicon, multi-architecture support is increasingly important. This tool would help users understand compatibility across platforms.
-    - []
+## 7. Best Practices Analyzer
+- **What it does**  
+  Reviews a `Dockerfile` or a Docker Hub repository against industry-standard best practices.
+- **Why add it**  
+  Educates users and enforces maintainable, secure containerization patterns.
+- **Status**  
+  - [x] Proposed  
+  - [x] In Development  
+  - [ ] Completed  
 
-10.  Container Networking Advisor
+---
 
-    -   What it does: Provides recommendations for container networking configurations
-    -   Why add it: Networking is often complex in containerized environments. This tool would demonstrate how AI can simplify understanding of container networking concepts.
-    - []
+## 8. Environment Variable Analyzer
+- **What it does**  
+  Identifies and documents the environment variables used by a Docker image.
+- **Why add it**  
+  Simplifies container configuration by explaining usage and default values for each variable.
+- **Status**  
+  - [x] Proposed  
+  - [x] In Development  
+  - [ ] Completed  
+
+---
+
+## 9. Multi-Architecture Support Analyzer
+- **What it does**  
+  Checks an image’s compatibility with various CPU architectures (e.g., ARM, x86).
+- **Why add it**  
+  Ensures seamless support for devices like Apple Silicon or ARM-based servers.
+- **Status**  
+  - [x] Proposed  
+  - [x] In Development  
+  - [ ] Completed  
+
+---
+
+## 10. Container Networking Advisor
+- **What it does**  
+  Provides recommendations for Docker networking setups (bridge, overlay, host, etc.).
+- **Why add it**  
+  Demystifies complex network configurations and highlights best practices for reliability and security.
+- **Status**  
+  - [x] Proposed  
+  - [x] In Development  
+  - [ ] Completed  
